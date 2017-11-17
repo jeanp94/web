@@ -1,7 +1,4 @@
-# alternate method for file caching
-ExpiresActive On
-ExpiresDefault A604800
-ExpiresByType image/x-icon A2419200
-ExpiresByType application/x-javascript A2419200
-ExpiresByType text/css A2419200
-ExpiresByType text/html A300
+# cache images and flash content for one month
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf)$">
+	Header set Cache-Control "max-age=2592000"
+</FilesMatch>
