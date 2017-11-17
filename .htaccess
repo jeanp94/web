@@ -1,3 +1,7 @@
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+	Header unset Cache-Control
+</FilesMatch>
+
 # alternate method for file caching
 ExpiresActive On
 ExpiresDefault A604800
