@@ -1,7 +1,7 @@
 # Disable ETags
 <IfModule mod_headers.c>
     Header unset ETag
-    Header set Connection keep-alive
+    Header set Connection keep-alive    
 </IfModule>
 FileETag None
  
